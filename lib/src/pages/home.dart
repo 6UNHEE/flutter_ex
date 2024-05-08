@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ex/src/pages/normal/first.dart';
+import 'package:flutter_ex/src/pages/simple_state_manage_page.dart';
 import 'package:get/get.dart';
 
 class Home extends StatelessWidget {
@@ -37,6 +38,10 @@ class Home extends StatelessWidget {
                   //Get.to(FirstPage(), arguments: "개남");
                 },
                 child: Text('Arguments 전달'),
+              ),
+              ElevatedButton(
+                onPressed: () => Get.to(SimpleStateManagePage()),
+                child: Text('단순상태관리'),
               ),
             ],
           ),
