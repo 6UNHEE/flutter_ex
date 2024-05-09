@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ex/src/pages/binding.dart';
 import 'package:flutter_ex/src/pages/named/first.dart';
 import 'package:flutter_ex/src/pages/named/second.dart';
 import 'package:flutter_ex/src/pages/next.dart';
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: "/first", page: () => FirstNamedPage()),
         GetPage(name: "/second", page: () => SecondNamedPage()),
         GetPage(name: "/next", page: () => NextPage()),
+        GetPage(name: "/binding", page: () => BindingPage()),
       ],
     );
   }

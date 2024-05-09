@@ -21,7 +21,7 @@ class DependencyManagePage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 Get.to(GetPut(), binding: BindingsBuilder(() {
-                  Get.put(DependencyManagePage());
+                  Get.put(DependecyController());
                 }));
               },
               child: Text("GetPut"),
